@@ -1,5 +1,4 @@
 import React from "react"
-import {connect} from "react-redux"
 
 class UserHeader extends React.Component {
 
@@ -17,9 +16,4 @@ class UserHeader extends React.Component {
 }
 
 
-const mapStateToProps = (state, propsFromUserHeader) => {
-
-    return {user: state.users.find( elem => elem.id === propsFromUserHeader.userId )}
-}
-
-export default connect(mapStateToProps) (UserHeader);
+export default UserHeader;
