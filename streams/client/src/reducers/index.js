@@ -1,5 +1,6 @@
 import {combineReducers} from "redux"
 import signType from "./types"
+import { reducer as formReducer } from 'redux-form'
 
 const INITIAL_STATE = {
     isSignedIn: null,
@@ -19,6 +20,8 @@ const authReducer = (state = INITIAL_STATE, action) => {
 
 export default combineReducers(
     {
+        form: formReducer,
         auth_state: authReducer
+
     }
 )
