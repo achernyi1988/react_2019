@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from "react-router-dom"
+import GoogleAPI from "./api/GoogleAPI"
 
 class Header extends Component {
     render() {
@@ -9,6 +10,7 @@ class Header extends Component {
                 <div className={"right menu"}>
                     <Link className={"item"} to={"/"}> All Streams </Link>
                 </div>
+                <GoogleAPI/>
             </div>
         );
     }
