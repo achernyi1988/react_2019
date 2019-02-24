@@ -64,9 +64,16 @@ const validate = (values) => {
         errors.title = "you must enter a title";
     }
     else if(values.title.length > 15){
-        console.log("must be 15 characters or less")
         errors.title = "must be 15 characters or less"
     }
+
+    if(!values.description){
+        errors.description = "you must enter a description";
+    }
+    else if(values.description.length > 50){
+        errors.description = "must be 50 characters or less"
+    }
+
     return errors;
 
 }
