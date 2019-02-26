@@ -1,6 +1,6 @@
 import React from "react"
 import { bindActionCreators }           from 'redux'
-import *  as authenticationCtreators  from "../../actions"
+import *  as authenticationCtreators  from "../actions/index"
 import {connect} from "react-redux"
 const CLIENT_ID = "947615618876-kp7q6jm7ehfdnbiu1vg3oci5cv0qttla.apps.googleusercontent.com";
 
