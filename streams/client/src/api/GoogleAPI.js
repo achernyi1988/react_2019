@@ -10,8 +10,6 @@ class GoogleAPI extends React.Component {
 
 
     onSignedInChange = (isSigned) => {
-        console.log("onSignedInChange ", isSigned);
-
         if(isSigned){
             this.props.actions.auth.trySignIn(this.auth.currentUser.get().getId());
 
@@ -24,8 +22,6 @@ class GoogleAPI extends React.Component {
     componentDidMount() {
 
         window.gapi.load("client:auth2", () => {
-            console.log("loaded");
-
             window.gapi.client.init({
                 scope: "email",
                 clientId: CLIENT_ID

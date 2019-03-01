@@ -1,6 +1,11 @@
-const signType = {
+const streamyType = {
     SIGN_OUT: "SIGN_OUT",
-    SIGN_IN: "SIGN_IN"
+    SIGN_IN: "SIGN_IN",
+    CREATE_STREAM: "CREATE_STREAM",
+    FETCH_STREAM: "FETCH_STREAM",
+    FETCH_STREAMS: "FETCH_STREAMS",
+    EDIT_STREAM: "EDIT_STREAM",
+    DELETE_STREAM: "DELETE_STREAM"
 }
 
-export default signType;
+export default streamyType;
